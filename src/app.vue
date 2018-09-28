@@ -66,12 +66,17 @@ import routes from './routes.js'
 
 export default {
   data() {
+    // Demo Theme
+    let theme = 'auto';
+    if (document.location.search.indexOf('theme=') >= 0) {
+      theme = document.location.search.split('theme=')[1].split('&')[0];
+    }
     return {
       // Framework7 parameters here
       f7params: {
         id: 'io.framework7.testapp', // App bundle ID
         name: 'Framework7', // App name
-        theme: 'auto', // Automatic theme detection
+        theme, // Automatic theme detection
         // App routes
         routes: routes,
       },
