@@ -1,6 +1,15 @@
-# Framework7 Vue + Webpack App Template
+# Personal Project List
 
-A full-featured Framework7 Vue with Webpack setup with hot-reload & css extraction. Based on [Vue Webpack Boilerplate](https://github.com/vuejs-templates/webpack)
+* Based off of [Framework7 Vue + Webpack App Template](https://github.com/framework7io/framework7-template-vue-webpack)
+* The purpose of this project is to show a list of cool websites/projects that you may have worked on or want a reference to.
+* Data is hard coded from `config/data/list.json`
+
+## Getting started
+
+* Make sure to copy list.json `cp ./config/data/list.template.json ./config/data/list.json`
+  * Or you can go to http://jsoneditoronline.org copy the contents of `config/data/list.template.json` then click save > online & use that **id** in the **retrieveList.sh**
+    * `sh retrieveList.sh -i "id"`
+  * This json is used to for the descriptions and list items.
 
 ## Usage
 
