@@ -1,0 +1,5 @@
+# ref http://api.jsoneditoronline.org/
+### get single json doc by id
+GET http://api.jsoneditoronline.org/v1/docs/{{id}}/data HTTP/1.1
+
+###
