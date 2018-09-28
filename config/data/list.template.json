@@ -1,0 +1,32 @@
+{
+  "about": "This webpage is to display links and tips for projects working on.",
+  "home_list": {
+    "description": "A list of website urls run locally on the vpn home network.",
+    "list": [
+      {
+        "link": "https://pi.hole",
+        "subtitle": "A black hole for Internet advertisements",
+        "title": "Pi-hole",
+        "iconUrl": "http://pi.hole/admin/img/logo.svg"
+      },
+      {
+        "link": "https://jenkinsurl",
+        "title": "Jenkins",
+        "subtitle": "Jenkins is an open source automation server",
+        "iconUrl": "http://jenkinsurl/static/11502054/images/jenkins.svg"
+      }
+    ]
+  },
+  "game_list": {
+    "description": "A list of games.",
+    "list": []
+  },
+  "live_list": {
+    "description": "A list of live projects",
+    "list": []
+  },
+  "github_list": {
+    "description": "A list of interesting projects on github",
+    "list": []
+  }
+}
