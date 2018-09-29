@@ -13,9 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('main-view/div_Color Themes'))
+WebUI.click(findTestObject('detailViews/color-themes/div_Color Themes'))
+
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Color Themes')
 
 WebUI.click(findTestObject('detailViews/color-themes/a_red'))
 
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico'))
+WebUI.callTestCase(findTestCase('Sub Tests/Navigate Back'), [:], FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico'))
+
+WebUI.acceptAlert()
 

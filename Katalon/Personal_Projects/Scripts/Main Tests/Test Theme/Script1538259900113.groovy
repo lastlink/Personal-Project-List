@@ -13,13 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-url = WebUI.getUrl()
+WebUI.callTestCase(findTestCase('Sub Tests/Open Web Application'), [:], FailureHandling.STOP_ON_FAILURE)
 
-// there is a different back btn for ios theme
-if (url.indexOf('ios') == -1) {
-    WebUI.click(findTestObject('navigation/Back_Btn'))
-} else {
-    WebUI.click(findTestObject('navigation/Back_Btn_Ios'))
-}
+WebUI.callTestCase(findTestCase('Sub Tests/Change Theme'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.callTestCase(findTestCase('Sub Tests/Close Browser'), [:], FailureHandling.STOP_ON_FAILURE)
+
