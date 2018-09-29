@@ -10,6 +10,10 @@ import Framework7Vue from 'framework7-vue/framework7-vue.esm.bundle.js';
 // Import F7 Styles
 import Framework7Styles from 'framework7/css/framework7.css';
 
+// import markdown styles 
+// import 'github-markdown-css'
+import 'github-markdown-css'
+
 // Import Icons and App Custom Styles
 import IconsStyles from './css/icons.css';
 import AppStyles from './css/app.css';
@@ -27,6 +31,6 @@ new Vue({
 
   // Register App Component
   components: {
-    app: App
+    app: App,
   }
 });

@@ -10,6 +10,10 @@ import PanelLeftPage from './pages/projects/panel-left.vue';
 import PanelRightPage from './pages/panel-right.vue';
 
 import Home from './pages/projects/home.vue';
+// tip pages
+import LinuxTips from './pages/projects/pi-tips.vue';
+import JenkinsTips from './pages/projects/jenkins-tips.vue';
+
 import About from './pages/projects/about.vue';
 import GamesList from './pages/projects/games-list.vue';
 import HomeList from './pages/projects/home-list.vue';
@@ -49,6 +53,14 @@ export default [
   {
     path: '/games-list/',
     component: GamesList,
+  },
+  {
+    path: '/linux-tips/',
+    component: LinuxTips
+  },
+  {
+    path: '/jenkins-tips/',
+    component: JenkinsTips
   },
   // Routable Modals
   {
