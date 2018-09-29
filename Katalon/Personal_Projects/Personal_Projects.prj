@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>Katalon automation of vuejs framework 7 personal projects list.</description>
+   <name>Personal_Projects</name>
+   <tag></tag>
+   <UUID>49014079-e3f4-42a6-be31-b1f612e9e382</UUID>
+   <migratedVersion>5.7.0</migratedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+   <sourceContent>
+      <sourceFolderList>
+         <sourceFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </sourceFolderConfiguration>
+      </sourceFolderList>
+      <systemFolderList>
+         <systemFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/features</url>
+         </systemFolderConfiguration>
+      </systemFolderList>
+   </sourceContent>
+</Project>
