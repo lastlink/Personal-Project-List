@@ -6,10 +6,10 @@
     </f7-block>
     <f7-block-title>Main View Navigation</f7-block-title>
     <f7-list>
-      <f7-list-item link="/#" title="Jenkins Tips" panel-close></f7-list-item>
-      <f7-list-item link="/#" title="Pi Tips" panel-close></f7-list-item>
-      <f7-list-item link="/#" title="Network Setup Tips" panel-close></f7-list-item>
-      <f7-list-item link="/#" title="OpenVPN Setup Tips" panel-close></f7-list-item>
+      <f7-list-item link="/jenkins-tips/" title="Jenkins Tips" view="#main-view" panel-close></f7-list-item>
+      <f7-list-item link="/linux-tips/" title="Pi Tips" view="#main-view" panel-close></f7-list-item>
+      <f7-list-item link="/network-setup/" title="Network Setup Tips" view="#main-view" panel-close></f7-list-item>
+      <f7-list-item link="/openvpn-setup/" title="OpenVPN Setup Tips" view="#main-view" panel-close></f7-list-item>
 
       <f7-list-item link="/accordion/" title="Accordion" panel-close></f7-list-item>
       <f7-list-item link="/action-sheet/" title="Action Sheet" panel-close></f7-list-item>
