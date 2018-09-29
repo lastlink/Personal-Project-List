@@ -17,5 +17,5 @@ WebUI.callTestCase(findTestCase('Sub Tests/Open Web Application'), [:], FailureH
 
 WebUI.callTestCase(findTestCase('Sub Tests/Navigate Through lists'), [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.callTestCase(findTestCase('Sub Tests/Close Browser'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sub Tests/Close Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 

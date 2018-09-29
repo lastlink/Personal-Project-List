@@ -15,43 +15,59 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('detailViews/home-list/div_Home Websites'))
 
-WebUI.click(findTestObject('detailViews/home-list/div_Home List'))
+WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('detailViews/home-list/div_Home List'))
+
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Home List')
+
+not_run: WebUI.switchToWindowTitle('Personal Projects')
+
+WebUI.click(findTestObject('detailViews/home-list/div_first_list_item'))
+
+WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowTitle('Personal Projects')
 
-WebUI.click(findTestObject('detailViews/home-list/div_Pi-hole'))
+WebUI.callTestCase(findTestCase('Sub Tests/Navigate Back'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.switchToWindowTitle('Personal Projects')
-
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_1'))
+not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_1'))
 
 WebUI.click(findTestObject('detailViews/live-list/div_Live Websites'))
 
-WebUI.click(findTestObject('detailViews/live-list/div_Live List'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_2'))
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Live List')
+
+not_run: WebUI.click(findTestObject('detailViews/live-list/div_Live List'))
+
+WebUI.callTestCase(findTestCase('Sub Tests/Navigate Back'), [:], FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_2'))
 
 WebUI.click(findTestObject('detailViews/github-list/div_Github Projects'))
 
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_3'))
+WebUI.delay(1)
+
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Github List')
+
+WebUI.callTestCase(findTestCase('Sub Tests/Navigate Back'), [:], FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_3'))
 
 WebUI.click(findTestObject('detailViews/game-list/div_Games'))
 
-WebUI.click(findTestObject('detailViews/game-list/div_Game List'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('detailViews/game-list/p_A list of games.'))
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Game List')
 
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_4'))
+WebUI.callTestCase(findTestCase('Sub Tests/Navigate Back'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('left-navbar/i_menu'))
+not_run: WebUI.click(findTestObject('detailViews/game-list/div_Game List'))
 
-WebUI.click(findTestObject('detailViews/pi-tips/div_Pi Tips'))
+not_run: WebUI.click(findTestObject('detailViews/game-list/p_A list of games.'))
 
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico'))
+not_run: WebUI.click(findTestObject('navigation/Back_Btn'))
 
-WebUI.click(findTestObject('left-navbar/i_menu'))
-
-WebUI.click(findTestObject('detailViews/jenkins-tips/div_Jenkins Tips'))
-
-WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico'))
+not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico_4'))
 

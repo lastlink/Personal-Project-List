@@ -13,19 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Sub Tests/Open Web Application'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('left-navbar/i_menu'))
 
-WebUI.callTestCase(findTestCase('Sub Tests/View About Page'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('detailViews/jenkins-tips/div_Jenkins Tips'))
 
-WebUI.callTestCase(findTestCase('Sub Tests/View Jenkins Tips'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Jenkins Tips\n')
 
-WebUI.callTestCase(findTestCase('Sub Tests/View Pi Tips'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('detailViews/Detail_Title'), 'Jenkins Tips\n')
 
-WebUI.callTestCase(findTestCase('Sub Tests/Navigate Through lists'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico'))
 
-WebUI.callTestCase(findTestCase('Sub Tests/Change Theme'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Tests/Change Color'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Sub Tests/Close Browser'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('navigation/Back_Btn'))
 
