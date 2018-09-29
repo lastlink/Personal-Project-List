@@ -21,6 +21,13 @@ not_run: WebUI.click(findTestObject('detailViews/home-list/div_Home List'))
 
 WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Home List')
 
+// check list length
+not_run: WebElement tem = driver.findElement(By.classname('trip-cards'))
+
+not_run: List list = temp.findElement(By.xpath('.//li'))
+
+not_run: list.size() == 1
+
 not_run: WebUI.switchToWindowTitle('Personal Projects')
 
 WebUI.click(findTestObject('detailViews/home-list/div_first_list_item'))

@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='framework7-root']/div[3]/div/div/div/div[4]/ul/li/a/div[2]/div/div</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#framework7-root > div.panel.panel-left.panel-reveal.theme-dark.panel-active > div > div > div > div.list > ul > li:nth-child(1) > a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
