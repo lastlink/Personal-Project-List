@@ -13,7 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('navigation/Back_Btn'))
+url = WebUI.getUrl()
+
+// there is a different back btn for ios theme
+if (url.indexOf('ios') == -1) {
+    WebUI.click(findTestObject('navigation/Back_Btn'))
+} else {
+    WebUI.click(findTestObject('navigation/Back_Btn_Ios'))
+}
 
 WebUI.delay(1)
-
