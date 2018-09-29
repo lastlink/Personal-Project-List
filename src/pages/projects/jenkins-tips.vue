@@ -20,6 +20,12 @@
           <li>
               <code>service jenkins restart</code> 
           </li>
+          <li>
+             Using rsync to deploy <br>
+              <code>rsync -rvu --delete $JENKINS_HOME/workspace/jobname/buildpath/ /var/www/html/webpagelocation</code> 
+          </li>
+                    
+
         </ul> 
 
       <h2>Good references:</h2>
