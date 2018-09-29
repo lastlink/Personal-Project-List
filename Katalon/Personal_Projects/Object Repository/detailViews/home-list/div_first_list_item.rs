@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Pi-hole</name>
+   <name>div_first_list_item</name>
    <tag></tag>
    <elementGuidId>b7b5c7b8-eefe-4251-8bcb-8614b7b0802c</elementGuidId>
    <selectorCollection>
@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='main-view']/div[2]/div[3]/div[3]/ul/li/a/div[2]/div[2]/div/div</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#main-view > div.page.page-with-subnavbar.page-current > div.page-content > div.searchbar-found.list.virtual-list > ul > li:nth-child(1) > a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

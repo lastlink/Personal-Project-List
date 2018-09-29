@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='main-view']/div/div[3]/div[3]/ul/li[4]/a/div[2]/div[2]/div</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#main-view > div > div.page-content > div.components-list.searchbar-found.list > ul > li:nth-child(4) > a > div > div.item-inner > div</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
