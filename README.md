@@ -93,6 +93,12 @@ Needed dynamic path using this
 cp Katalon/Personal_Projects/Data Files/ListLengths.template.dat Katalon/Personal_Projects/Data Files/ListLengths.dat
 ```
 
+Also make sure to ignore any new changes to git if the .ts file for test suite already exists. These are always changing showing latest run which we don't care about. MAY NEED TO RERUN THIS PERIODICALLY
+
+```bash
+git update-index --assume-unchanged Katalon/Personal_Projects/Test\ Suites/*.ts
+```
+
 Can use ide to generate cmd
 
 Mac katalon terminal command
