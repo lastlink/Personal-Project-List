@@ -2,3 +2,6 @@
 # .project
 Reports
 bin
+*.glbl
+Test Suites/*.ts
+Libs
