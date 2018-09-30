@@ -6,11 +6,15 @@
    <elementGuidId>3075b26f-8515-4202-9dc2-329f156e4fb3</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#main-view > div > div.navbar > div > div.left > a</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='main-view']/div/div/div/div/a/i</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
