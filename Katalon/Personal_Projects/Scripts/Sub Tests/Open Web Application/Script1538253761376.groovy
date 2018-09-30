@@ -17,3 +17,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Personal Projects')
+
+title = WebUI.getWindowTitle()
+
+WebUI.verifyEqual(title, 'Personal Projects')
+
