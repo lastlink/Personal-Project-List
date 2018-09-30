@@ -17,9 +17,11 @@ WebUI.click(findTestObject('left-navbar/i_menu'))
 
 WebUI.click(findTestObject('detailViews/pi-tips/div_Pi Tips'))
 
-WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Pi/Linux Tips\n')
+WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('detailViews/Detail_Title'), 'Pi/Linux Tips\n')
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Pi/Linux Tips')
+
+WebUI.verifyElementText(findTestObject('detailViews/Detail_Title'), 'Pi/Linux Tips')
 
 WebUI.click(findTestObject('navigation/Back_Btn'))
 
