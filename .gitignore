@@ -46,3 +46,4 @@ package-lock.json
 list*.json
 list.js
 notes.txt
+listLengths.csv
