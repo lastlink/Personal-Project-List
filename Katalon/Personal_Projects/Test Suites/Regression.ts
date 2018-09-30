@@ -48,12 +48,6 @@
       <testCaseId>Test Cases/Sub Tests/Navigate Through lists</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>63fe3f93-6db7-49d0-bfaa-28f9cd52b72d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Sub Tests/Navigate Back</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>d34d21ab-7094-4fa2-bb06-e062abe6b032</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
