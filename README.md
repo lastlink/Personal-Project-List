@@ -84,6 +84,23 @@ npm run dev
 npm run build
 ```
 
+### Katalon Ui Selenium tests
+
+Setup dependencies
+Needed dynamic path using this
+
+```bash
+cp Katalon/Personal_Projects/Data Files/ListLengths.template.dat Katalon/Personal_Projects/Data Files/ListLengths.dat
+```
+
+Can use ide to generate cmd
+
+Mac katalon terminal command
+
+```bash
+/Applications/Katalon\ Studio.app/Contents/MacOS/katalon--args -noSplash  -runMode=console -consoleLog -projectPath="fullpathtorepo/Katalon/Personal_Projects/Personal_Projects.prj" -retry=0 -testSuitePath="Test Suites/Regression" -executionProfile="default" -browserType="Chrome (headless)"
+```
+
 ## Project Structure
 
 * `src/assets` - folder with static assets (images)
