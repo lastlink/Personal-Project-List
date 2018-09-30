@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('detailViews/about/div_About'))
 
+WebUI.delay(1)
+
 WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'About Project List')
 
 WebUI.verifyElementText(findTestObject('detailViews/Detail_Title'), 'Welcome to Project List')

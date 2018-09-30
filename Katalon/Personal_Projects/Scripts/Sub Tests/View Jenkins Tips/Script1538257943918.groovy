@@ -17,9 +17,11 @@ WebUI.click(findTestObject('left-navbar/i_menu'))
 
 WebUI.click(findTestObject('detailViews/jenkins-tips/div_Jenkins Tips'))
 
-WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Jenkins Tips\n')
+WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('detailViews/Detail_Title'), 'Jenkins Tips\n')
+WebUI.verifyElementText(findTestObject('navigation/Nav_Title'), 'Jenkins Tips')
+
+WebUI.verifyElementText(findTestObject('detailViews/Detail_Title'), 'Jenkins Tips')
 
 not_run: WebUI.click(findTestObject('Object Repository/main-view/Page_Personal Projects/i_Default Route (404)_icon ico'))
 
