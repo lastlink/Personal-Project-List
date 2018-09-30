@@ -3,7 +3,7 @@
 Reports
 bin
 *.glbl
-Test Suites/*.ts
+# Test Suites/*.ts
 Libs
 console.properties
 ListLengths.dat
