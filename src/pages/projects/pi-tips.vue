@@ -61,8 +61,10 @@
       </ul>  
     <h2> Give priority to processes and attempt to throttle.</h2>
 
-    <p>Use tool called <strong>nice</strong> <code>-n-20</code> Highest priority and
-     <code>-n19</code> is lowest priority</p>
+    <p>IMPORTANT use tool called <strong>nice</strong> <code>-n-20</code> Highest priority and
+     <code>-n19</code> is lowest priority. Really important so other processes still open while doing simple things like unzipping and moving files around.
+     Otherwise will bring all processes to a crawl... :(
+    </p>
 
   </div>
     </f7-block>

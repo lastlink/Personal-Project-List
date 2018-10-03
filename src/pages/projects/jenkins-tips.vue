@@ -27,6 +27,16 @@
                     
 
         </ul> 
+      <h2>Config location on debian:</h2>
+
+      <ul>
+        <li>
+          For changing server configurations like memory: <code>/etc/default/jenkins</code> 
+        </li>
+         <li>
+          Location of workspaces, builds, files: <code>/var/lib/jenkins</code> 
+        </li>
+      </ul> 
 
       <h2>Good references:</h2>
 
